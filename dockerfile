@@ -9,6 +9,8 @@ RUN rm -rf ./*
 
 # Copy your HTML and related files into the container
 COPY . .
+COPY . /usr/share/nginx/html
+COPY images /usr/share/nginx/html/images
 
 # Expose port 80 to access the website
 EXPOSE 80
